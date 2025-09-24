@@ -10,14 +10,14 @@
 body,
 html {
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     background-color: hsl(233, 47%, 7%);
     
 }
 
 main{
     width: 100vw;
-    height: 80vh;
+    height: 81vh;
     display: flex;
     justify-content: center;    
     text-align: center;
@@ -93,4 +93,67 @@ footer h1{
     
 }
 
+@media (min-width: 998px) { 
+    /*Estilos para tablet */
+
+    main{
+        height: ;
+        display: flex;
+        align-items: center;
+    }
+
+    .container{
+        display: flex;
+        width: 1000px;
+        height: fit-content;
+        flex-direction: row-reverse;
+        border-radius: 8px;
+
+        
+        transition-duration: 0.4s;
+        
+    }
+
+    .foto{
+        
+    }
+
+    .trabalho{   
+        position: relative;
+        top: 3px;
+        width: 500px;
+        
+}
+
+    .infos{
+        padding: 60px ;
+        text-align: left;
+        
+        
+        max-width: 600px;
+        
+    }
+     .infos p{
+        display: ;
+        font-size: 1.2em;
+        padding-bottom: px;
+     }
+
+    .infos2{
+        position:relative;
+        top: 20px;
+        display: flex;
+        text-align: center;
+        gap: 30px;      
+        
+    }
+
+    footer{
+        position: relative;
+        bottom: 150px;
+        transition-duration: 0.8s;
+
+    }
+
+} 
 
