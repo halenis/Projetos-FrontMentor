@@ -36,20 +36,27 @@ main{
     height: fit-content;
     border-radius: 20px;
 
-    transition-duration: 0.6s;
+    transition-duration: 0.4s;
+    
+
 
 }
 
 .foto{
     
-
+ filter: sepia(100%) saturate(300%) hue-rotate(200deg);
 }
 
 .trabalho{
     width: 374px;
-    border-radius: 5px;
-    
+    border-radius: 5px; 
+   
 
+}
+
+.trabalho::after{
+    
+    
 }
 
 .infos{
