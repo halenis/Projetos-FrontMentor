@@ -5,20 +5,23 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif
+    
 }
 
 body,
 html {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-color: hsl(233, 47%, 7%);
     
 }
 
 main{
     width: 100vw;
-    height: 81vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;    
     text-align: center;
     margin-top:1%;
@@ -26,25 +29,34 @@ main{
 
 }
 
-.container{
+.container{    
     background-color: hsl(244, 37%, 16%);
     color: white;
     width: 375px;
     height: fit-content;
     border-radius: 20px;
 
+    transition-duration: 0.4s;
+    
+
+
 }
 
 .foto{
     
-
+ filter: sepia(100%) saturate(300%) hue-rotate(200deg);
 }
 
 .trabalho{
     width: 374px;
-    border-radius: 5px;
-    filter: contrast(110%) brightness(90%) saturate(150%) hue-rotate(270deg) sepia(30%);
+    border-radius: 5px; 
+   
 
+}
+
+.trabalho::after{
+    
+    
 }
 
 .infos{
@@ -81,16 +93,11 @@ main{
     color: rgb(172, 169, 169);
 }
 
-footer{
-    
-
-}
-
-footer h1{
-    
+.footer{
+    font-size: 1em;
+    color: rgb(116, 116, 116);
+    padding: 5px;
     text-align: center;
-    color: hsl(278, 42%, 84%);
-    
 }
 
 @media (min-width: 998px) { 
@@ -148,12 +155,7 @@ footer h1{
         
     }
 
-    footer{
-        position: relative;
-        bottom: 150px;
-        transition-duration: 0.8s;
-
-    }
+    
 
 } 
 
